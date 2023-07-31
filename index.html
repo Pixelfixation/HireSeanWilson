@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sean Wilson - Data Science Student</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ac3642cd23.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="only-small fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="only-small fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Data Science Student</p>
+          <h1>Hello, I'm <span>Sean</span><br />Wilson</h1>
+        </div>
+      </div>
+    </div>
+    <!----------about--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am at junior a Mesa Community College. I am nearly finished at
+              MCC and will soon be persuing a Bachelor of Science in Data
+              Science at ASU. I am employed at SilverRock as a Strategic Data
+              Analyst intern. I also work a college mathematics and computer
+              science tutor at MCC. I am a maker, programmer and tinkerer. I and
+              love tackling complicated projects and learning new skills.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Education</p>
+              <p class="tab-links" onclick="opentab('education')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Python - 3 Years</span><br />Automation, Data
+                  Visualization, Simulations, Hardware Integration
+                </li>
+                <li><span>C# - 2 Years</span><br />Unity Game Engine</li>
+                <li>
+                  <span>C++/Java - 2 Years</span><br />Completed MCC computer
+                  science curriculum
+                </li>
+                <li>
+                  <span>SQL - 1 Year</span><br />Built queries and conducted
+                  data exploration in SnowFlake and SnowPark
+                </li>
+                <li>
+                  <span>3D - 3 Years</span><br />Desinging and printing objects
+                  using FDM 3D printers
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Present</span><br />pursuing BS Data Science at
+                  ASU
+                </li>
+                <li>
+                  <span>2023</span><br />Associates Science, Computer Science
+                  from Mesa Community College
+                </li>
+                <li>
+                  <span>2007</span><br />Highschool Deploma from Waconia
+                  Highschool
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023 - Present</span><br />Strategic Data Analyst intern
+                  for SilverRock inc
+                </li>
+                <li>
+                  <span>2022 - Present</span><br />Computer science and
+                  mathematics tutor at Mesa Community College
+                </li>
+                <li>
+                  <span>2018-2022</span><br />IT Asset Management Specialist,
+                  Matrix Medical Network
+                </li>
+                <li><span>2009-2018</span><br />Automotive Mechanic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------Academics------------->
+    <div id="academics">
+      <div class="container">
+        <h1 class="sub-title">Academics</h1>
+        <div class="academics-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Computer Science - MCC</h2>
+            <p>
+              Completed all MCC Computer science courses, took many as honors
+              classes. Founded and led MCC Computer Science Club for 2 years.
+            </p>
+            <!--<a href="#">Learn more</a>-->
+          </div>
+          <div>
+            <i class="fas fa-regular fa-database"></i>
+            <h2>Data Science - ASU</h2>
+            <p>Currently studying Data Science at ASU.</p>
+            <!--<a href="#">Learn more</a>-->
+          </div>
+          <div>
+            <i class="fa-solid fa-xmark"></i>
+            <h2>Mathematics</h2>
+            <p>
+              Completed Math through Calculus 3, took several courses as honors
+              classes. I take pride in my ability to leverage math to strengthen
+              my code.
+            </p>
+            <!--<a href="#">Learn more</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------Portfolio------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <div class="video-container">
+              <video autoplay loop muted playsinline>
+                <source src="videos/VendorMap.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="layer">
+              <h3>Interactive Geospatial Heat Map</h3>
+              <p>
+                SilverRock tasked me with building a tool to help the Vendor
+                Team identify holes in our Vendor network for my internship
+                project. The tool connects with a SnowFlake DB and is built with
+                Python utilizing the Folium, Geopandas, Leaflet and Geopy
+                packages.
+              </p>
+              <!--<a href="#"><i class="fa-solid fa-link"></i></a>-->
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/bezier.png" />
+            <div class="layer">
+              <h3>Bezier Curve Simulation</h3>
+              <p>
+                I created a interactive visualization of bezier curves to
+                demonstrate a deep understanding of linear interpolation and
+                parametric functions. This was a honors project for Calculus ii
+                at MCC. The simulation was built in P5.js. The entire project is
+                visable online and interactable. Follow the link.
+              </p>
+              <a href="https://editor.p5js.org/Pixelfixation/sketches/70X-8B5u6"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <div class="video-container">
+              <video autoplay loop muted playsinline>
+                <source src="videos/DiceDistribution.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="layer">
+              <h3>Dice Distribution Application</h3>
+              <p>
+                I built a Modern Python GUI application with the Eel library.
+                The project uses convolutions the quickly show the probability
+                of distinct outcomes of a of addative, subtractive and
+                multiplicative dice rolls.
+              </p>
+              <!--<a href="#"><i class="fa-solid fa-link"></i></a>-->
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">To Top</a>
+      </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> pixelfixation@gmail.com
+            </p>
+            <p><i class="fa-solid fa-mobile"></i> +1 (602) 768-8897</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/sean.wilson.58/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sean-wilson-4b1ba3132/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/pixel.fixation/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="resume/Technical Resume.docx" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message to Me"
+              ></textarea>
+              <button type="submit" class="btn btn2">Send</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023, Sean Wilson</p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+      function opentab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("side-menu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzQn9hnTGTclWq4wucSJhYe96zUnvMAyS1v7vHOL75kyb41PY1LLTDlVrZsHD6zs4nm/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
