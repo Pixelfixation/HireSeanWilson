@@ -196,6 +196,7 @@ nav ul li a:hover::after {
 }
 .work video {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.4s;
@@ -206,6 +207,8 @@ nav ul li a:hover::after {
 .video-container {
   position: relative;
   width: 100%;
+  min-height: 550px;
+  max-height: 800px;
 }
 .work:hover video {
   transform: scale(1.1);
